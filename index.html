@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+
+        menu {
+            background-color: white;
+            height: 100px;
+            width: 100%;
+            font-size: 0;
+            position: relative;
+
+
+        }
+
+        span {
+            position: absolute;
+            text-align: center;
+            font-size: 40px;
+            top: calc(100px - 70px);
+        }
+
+
+
+        .logo {
+            height: 100px;
+            width: 100px;
+
+        }
+
+        header {
+            background-image: url(https://pixabay.com/get/55e0d04b4851ac14f6d1867dda293079153cd6e2554c704c7c297adc9f49c150_1920.jpg);
+            width: 100%;
+            height: 90vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+
+
+        }
+
+        header h1 {
+
+            letter-spacing: 2px;
+            font-size: 70px;
+            font-weight: bold;
+            padding-top: 6vh;
+            font-family: 'Roboto', sans-serif;
+
+            color: white;
+        }
+
+
+
+        header button {
+            letter-spacing: 2px;
+            font-size: 65px;
+            background-color: rgba(0, 0, 0, 0.322);
+            border: 6px rgb(255, 251, 0) solid;
+            color: white;
+            padding: 10px;
+            transition: .3s linear;
+            margin-top: 55vh;
+            border-radius: 12px;
+        }
+
+        header button:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+            border: 6px solid rgb(255, 251, 0);
+            border-radius: 14px;
+
+        }
+
+        .know {
+            letter-spacing: 1px;
+            font-size: 25px;
+            background-color: transparent;
+            border: 4px darksalmon solid;
+            color: black;
+            padding: 10px 32px;
+            transition: .3s linear;
+            font-family: sans-serif;
+            font-weight: bold;
+            float: right;
+            margin: 20px 20px;
+            cursor: pointer;
+        }
+
+        .bruh {
+            border: 0px solid black;
+            padding: 15px 20px;
+        }
+
+        main {
+            background-image: url(https://pixabay.com/get/54e8d540485aa414f6d1867dda293079153cd6e2554c704c7c297adc904ac150_1920.jpg);
+            text-align: center;
+            background-size: cover;
+            position: relative;
+            width: 100%;
+            height: 70vh;
+        }
+
+        .wrapper {
+            justify-content: center;
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        img {
+            height: 300px;
+            width: 400px;
+        }
+
+        :root {
+            --bgccolor: white;
+        }
+
+        .one {
+
+            background-color: var(--bgccolor);
+            border-radius: 10%;
+            width: 400px;
+            height: 55%;
+        }
+
+        .two {
+
+
+            background-color: var(--bgccolor);
+            border-radius: 10%;
+            width: 400px;
+            height: 55%;
+            margin: 0 50px;
+        }
+
+        .three {
+            background-color: var(--bgccolor);
+            border-radius: 10%;
+            width: 400px;
+            height: 55%;
+        }
+
+        main h1 {
+            color: #fff;
+            font-size: 90px;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        section {
+            height: 92vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrappertwo {
+            width: 75%;
+            height: 85vh;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            text-align: center;
+            background-image: url(https://cdn.pixabay.com/photo/2020/06/21/15/57/cup-of-coffee-5325621_960_720.jpg);
+            background-size: cover;
+
+        }
+
+        footer {
+            width: 100%;
+            height: 8vh;
+            background-color: #999;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .motto {
+            color: whitesmoke;
+            font-family: Lobster;
+            font-size: 75px;
+        }
+
+        .by {
+            color: whitesmoke;
+            font-family: Lobster;
+            font-size: 50px;
+        }
+
+        footer div {
+            font-family: arial, sans-serif;
+            font-size: 25px;
+        }
+
+        @media (max-width: 400px) {
+            menu {
+                background-color: white;
+                height: 100px;
+                width: 100%;
+                font-size: 0;
+            }
+
+            span {
+                font-size: 22px;
+                top: calc(100px - 63px);
+            }
+
+            .know {
+                letter-spacing: 1px;
+                font-size: 25px;
+                border: 3px darksalmon solid;
+                padding: 6px 10px;
+                margin: 26px 10px;
+            }
+
+            .bruh {
+                display: none;
+            }
+
+            header h1 {
+
+                letter-spacing: 1px;
+                font-size: 60px;
+                font-weight: bold;
+                padding-top: 2vh;
+            }
+
+            header {
+                background-size: cover;
+                background-position: -370px, -100px;
+            }
+
+            main {
+                background-image: url(https://pixabay.com/get/54e8d540485aa414f6d1867dda293079153cd6e2554c704c7c297adc904ac150_1920.jpg);
+                width: 100%;
+                height: 70vh;
+            }
+
+            .wrapper {
+                align-items: center;
+                font-size: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: 0 auto;
+                height: 85%;
+                overflow: hidden;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            div img {
+                margin-top: 10px;
+                height: 100px;
+                width: 200px;
+            }
+
+            .one {
+                margin-bottom: 20px;
+                width: 300px;
+                height: 30%;
+            }
+
+            .two {
+                width: 300px;
+                height: 30%;
+                margin: 0 50px;
+                margin-bottom: 20px;
+            }
+
+            .three {
+                background-color: var(--bgccolor);
+                border-radius: 10%;
+                width: 300px;
+                height: 30%;
+            }
+
+            main h1 {
+                font-size: 50px;
+                margin-bottom: 0px;
+            }
+
+            .motto {
+                font-size: 50px;
+            }
+
+            .by {
+                font-size: 30px;
+
+            }
+
+            .wrappertwo {
+                background-position: -380px, -100px;
+
+            }
+        }
+
+        @media (max-width: 360px) {
+
+            span {
+
+                font-size: 20px;
+                top: calc(100px - 60px);
+            }
+
+            .know {
+                letter-spacing: 1px;
+                font-size: 20px;
+                border: 3px darksalmon solid;
+                padding: 6px 10px;
+                margin: 30px 10px;
+            }
+
+            .bruh {
+                display: none;
+            }
+
+            header button {
+                font-size: 60px;
+                margin-top: 40vh;
+            }
+
+            header h1 {
+                letter-spacing: 1px;
+                font-size: 50px;
+                font-weight: bold;
+                padding-top: 2vh;
+            }
+
+            header {
+                background-size: cover;
+                background-position: -370px, -100px;
+            }
+
+            main {
+                background-image: url(https://pixabay.com/get/54e8d540485aa414f6d1867dda293079153cd6e2554c704c7c297adc904ac150_1920.jpg);
+                width: 100%;
+                height: 70vh;
+            }
+
+            .wrapper {
+                align-items: center;
+                font-size: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: 0 auto;
+                height: 85%;
+                overflow: hidden;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            div img {
+                margin-top: 5px;
+                height: 50px;
+                width: 130px;
+            }
+
+            .one {
+                margin-bottom: 20px;
+                width: 300px;
+                height: 30%;
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+
+            .two {
+                width: 300px;
+                height: 30%;
+                margin: 0 50px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+
+            .three {
+                background-color: var(--bgccolor);
+                border-radius: 10%;
+                width: 300px;
+                height: 30%;
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+
+            main h1 {
+                font-size: 45px;
+                margin-bottom: 0px;
+            }
+
+            .motto {
+                font-size: 50px;
+            }
+
+            .by {
+                font-size: 30px;
+
+            }
+
+            .wrappertwo {
+                background-position: -200px, -100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <menu>
+        <img class="logo"
+            src="https://png.pngtree.com/template/20190323/ourlarge/pngtree-coffee-logo-design-image_82183.jpg" alt="">
+        <span>Coffee Masters</span>
+        <button class="know">Contact</button>
+        <button class="know bruh">About us</button>
+
+    </menu>
+    <header>
+        <h1>Proffesional Coffee selling</h1>
+
+        <button>Check out</button>
+    </header>
+    <main>
+        <h1>Our services</h1>
+        <div class="wrapper clearfix">
+
+
+            <div class="one">
+                <img src="https://cdn.pixabay.com/photo/2016/04/01/11/04/coffee-1300181_960_720.jpg" alt="">
+                <h2>High quality</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad culpa incidunt, quia quasi amet
+                    consectetur soluta eligendi, autem beatae</p>
+            </div>
+            <div class="two">
+                <img src="https://cdn.pixabay.com/photo/2020/06/21/15/55/cup-of-coffee-5325613_960_720.jpg" alt="">
+                <h2>Fast production</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad culpa incidunt, quia quasi amet
+                    consectetur soluta eligendi, autem beatae</p>
+            </div>
+            <div class="three">
+                <img src="https://cdn.pixabay.com/photo/2019/07/28/05/19/sweets-4367949_960_720.jpg" alt="">
+                <h2>Many cookies</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad culpa incidunt, quia quasi amet
+                    consectetur soluta eligendi, autem beatae</p>
+
+            </div>
+
+        </div>
+    </main>
+    <section>
+        <div class="wrappertwo">
+            <p class="motto">"Coffee is not just a coffee"</p>
+            <p class="by"> -Jeff Kaplan</p>
+
+        </div>
+    </section>
+    <footer>
+        <div>Coffee Masters &copy;</div>
+    </footer>
+
+</body>
+
+</html>
